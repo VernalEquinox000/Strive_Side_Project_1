@@ -5,7 +5,15 @@ import Product from "./components/Product";
 import Cart from "./components/Cart";
 import Backoffice from "./components/Backoffice";
 function App() {
-  return <Backoffice />;
+  state = {
+    query: "",
+  };
+  return (
+    <Router>
+      <NavBar />
+      <Route render={(props) => <Home {...props} />} />
+    </Router>
+  );
 }
 
 export default App;
