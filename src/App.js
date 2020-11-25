@@ -1,10 +1,10 @@
-import "bootstrap/dist/css/bootstrap.min.css"
-import "./App.css"
-import Home from "./components/Home"
-import Product from "./components/Product"
-import Cart from "./components/Cart"
-import Backoffice from "./components/Backoffice"
-import {BrowserRouter as Router, Route} from "react-router-dom"
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import Home from "./components/Home";
+import Product from "./components/Product";
+import Cart from "./components/Cart";
+import Backoffice from "./components/Backoffice";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         render={(props) => <Product {...props} />}
       />
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;
